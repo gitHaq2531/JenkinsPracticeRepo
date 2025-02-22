@@ -47,6 +47,7 @@ public void configBaseClass() throws IOException {
 	System.out.println("===execute baseclass===");
 	System.out.println("launch browser here");
 	String browser=System.getProperty("browser", futil.getDataFromProperties("browser"));
+	System.out.println(browser);
 	if(browser.equals("chrome")){
 		driver=new ChromeDriver();
 	}
